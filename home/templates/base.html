@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+{% load static %}
+{% load home_extras %}
+<html>
+    <head>
+        <title>{% filename %}</title>
+        <link rel="shortcut icon" type="image/png" href="{% static 'favicon.ico' %}"/>
+    </head>
+    <body>
+        {% block content %}
+        {% endblock content %}
+        <script type="text/javascript" src="{% static 'dist/js/chunk-vendors.js' %}"></script>
+        <script type="text/javascript" src="{% static 'dist/js/' %}{% filename%}.js"></script>
+        <link href="{% static 'dist/css/home.css' %}" rel=stylesheet>
+        
+    </body>
+</html>
