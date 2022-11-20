@@ -26,5 +26,12 @@ module.exports = {
             title: 'Home',
             chunks: ['chunk-vendors', 'chunk-common', 'index']
         },
+        'spaceyard': {
+            entry: 'src/pages/spaceyard/main.js',
+            template: 'public/index.html',
+            title: 'Spaceyard',
+            chunks: ['chunk-vendors', 'chunk-common', 'spaceyard']
+        },
     },
+
 };
